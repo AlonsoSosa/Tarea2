@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Tarea2.Views.PagePerson"
+             Title="PagePerson">
+    <ContentPage.Content>
+        <StackLayout>
+
+            <Image x:Name="foto" WidthRequest="100" HeightRequest="200"/>
+
+            <Button x:Name="btnfoto" Text="Capturar Imagen" Clicked="btnfoto_Clicked"/>
+
+            <Entry Keyboard="Text" Placeholder="Indique su nombre" x:Name="txtnombre"/>
+
+            <Entry Keyboard="Text" Placeholder="Indique su apellido" x:Name="txtapellido"/>
+
+            <DatePicker x:Name="fechanac" Format="D"/>
+
+            <Entry Keyboard="Text" Placeholder="Indiue su correo" x:Name="txttelefono"/>
+
+            <Button x:Name="btnproceso" Text="Agregar" Clicked="btnproceso_Clicked"/>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
